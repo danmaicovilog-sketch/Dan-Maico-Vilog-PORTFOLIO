@@ -18,28 +18,76 @@
 	}
 	header {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		height: 70px;
 		padding: 0 40px;
 		background: linear-gradient(to left, yellow, white);
+	}
+	ul{
+	display: flex;
+	font-size: 20px;
+	font-family:Georgia,serif ;
+	list-style: none;
+	margin-right: 40px;
+}
+li{
+	margin: 20px;
+	font-weight: bold;
+}
+.pfp{
+    width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	}
+
+	}
+	.nav a{
+		display: flex;
 		align-items: center;
+		color: floralwhite;
+	}
+	
+	.nav a:hover{
+		color:#cccccc;
+	}
+	.index a{
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.nav{
+		display: flex;
+		align-items: center;
+	}
+	.nav li{
+		margin-right: 19px;
 	}
 	.College h2{
 		text-decoration: none;
-		color: white;
+		color: black;
 		font-size: 30px;
 		font-family: Georgia,serif;
-		align-items: center;
-		margin-top: 10px;
-		margin-left: 629px;
+		text-align: center;
+		font-weight: bold;
 	}
 	.College{
-   text-align:center;	
+    border: black;
+	border-radius: 20px;
+	background-color: linear-gradient(to left,yellow,white);
+	margin-top: 10px;
     }
 	.logo{
 		border-radius: 20px;
 		align-items: center;
 		height: 17vh;
 		width: 10vw;
+		margin-bottom: 30px;
+	}
+	.logo-section{
+		margin-top: 6px;
 	}
 	.Mission{
 		background: linear-gradient(to left, yellow, white);
@@ -51,7 +99,7 @@
 	font-size: 20px;
 }
 .Mission p{
-	font-size: 10px;
+	font-size: 15px;
 }
 	.Vision{
 		background: linear-gradient(to left, yellow, white);
@@ -63,7 +111,7 @@
 		font-size: 20px;
 	}
 	.Vision p{
-		font-size: 10px;
+		font-size: 15px;
 	}
 	.ASChymn{
     font-style: italic;
@@ -71,7 +119,7 @@
     font-size: 30px;
     color: powderblue;
     background-color: rgba(0, 0, 0, 0.7); 
-    border: 5px solid powderblue;         
+    border: 5px solid yellow;         
     padding: 20px;                       
     border-radius: 20px;                  
     width: 60%;                         
@@ -90,34 +138,38 @@
 	}
 </style>
 
-<body style= "background-image: url('BG-img.jpg');background-repeat: no-repeat;background-size: cover;">
+<body style= "background-image: url('ASC.jpg');background-repeat: no-repeat;background-size: cover;">
 
-	<header>
+<header>
+<div class= "index">
+	<a href= "index.html"> My Portfolio</a></div>
+<ul class= "nav">
+	<li><img src= "profilepic.jpg" alt="Profile Picture" class="pfp"></li>
+	<li><a href="index.html" style="text-decoration: none; color: black;">Homepage</a></li>
+	<li><a href="VilogBootstrap.html"style="text-decoration: none;color: black;">About Me</a></li>
+	<li><a href="contacts.html"style="text-decoration: none;color: black;">Contacts</a></li>
+	<li><a href="profiles.html"style="text-decoration: none;color: black;">Profiles</a></li>
+</ul>
+</header>
+<body style= "background-image: url('ASC.jpg');background-repeat: no-repeat;background-size: cover;">
 
 		<div class="College">
-
-	<h2>MY COLLEGE</h2></div>
-
-	</header>
+	<h2>APAYOA STATE COLLEGE</h2>
+</div>
 
 <div class= "logo-section">
 <img src="ASC-logo.png" alt="School-logo" class="logo"></div>
 
 <div class="Mission">
-
 	<h2>MISSION</h2>
-
 	<p>Apayao State College is committed to nurturing and developing nation builders in critical fields towards producing graduates equipped with internationally competitive innovations who can transform society for sustainable development.</p></div>
 
 	<div class="Vision">
-
 		<h2>VISION</h2>
-
     <p>An innovation-driven higher education institution  pursuing excellence in instruction, pioneering research,  community empowerment, entrepreneurship, cultural preservation, and biodiversity protection and conservation.</p></div>
 
 <div class="ASChymn">
 	<h2><strong>ASC Hymn</strong></h2>
-
 	<p>
 	On March here we are all ASC-ians<br>
     One heart, one soul, one mind<br>

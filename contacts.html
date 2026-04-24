@@ -8,7 +8,7 @@
 <style type="text/css">
 	body{
 		margin: 0;
-		color: black;
+	color: black;
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -59,28 +59,42 @@
 	object-fit: cover;
 	margin-top: 8px;
 }
-.info h3{
-	font-family: Georgia,sans-serif;
-	font-size: 30px;
-	color: white;
-}
-.contacts h2{
-	font-family: Georgia,sans-serif;
-	font-size: 30px;
-	color: white;
-}
-.contacts{
-	border: black;
-	border-radius: 20px;
-	background-color: grey;
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
 
+.contact-card {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 350px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.contact-card h2 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 40PX;
+}
+
+.contact-card p {
+    margin: 15px 0;
+    font-size: 20px;
+    font-family: Georgia,sans-serif;
+    line-height: 2;
+}
 </style>
 <header>
 <div class= "index">
 	<a href= "index.html"> My Portfolio</a></div>
 <ul class= "nav">
-	<li><img src= "pfp1.jpg" alt="Profile Picture" class="pfp"></li>
+	<li><img src= "profilepic.jpg" alt="Profile Picture" class="pfp"></li>
 	<li><a href="index.html" style="text-decoration: none;">Homepage</a></li>
 	<li><a href="aboutme.html"style="text-decoration: none;">About Me</a></li>
 	<li><a href="contacts.html"style="text-decoration: none;">Contacts</a></li>
@@ -88,22 +102,14 @@
 </ul>
 </header>
 <body style= "background-image: url('BG-img.jpg');background-repeat: no-repeat;background-size: cover;">
-
-	<div class= "contacts">
-
-	<h2>CONTACTS</h2>
-</div>
-	<div class="info">
-
-	<h3>NAME</h3>
-	<p>DAN MAICO VILOG</p>
-	<h3>Email Adress</h3>
-	<p>danmaicovilog@gmail.com</p>
-	<h3>Adress</h3>
-	<p>Sta Lina,Luna,Apayoa</p>
-	<h3>Contact Number</h3>
-	<p>09771674524</p>
- </div>
+	<div class="contact-container">
+  <div class="contact-card">
+    <h2>CONTACTS</h2>
+    <p>Name:<br> Dan Maico Vilog</p>
+    <p>📧Email:<br><a href="mailto:danmaicovilog@gmail.com"> danmaicovilog@gmail.com</a></p>
+    <p>Address:<br> Sta. Lina, Luna, Apayao</p>
+    <p>📞Contact Number:<br> 09771674524</p>
+  </div>
 </div>
 </body>
 </html>

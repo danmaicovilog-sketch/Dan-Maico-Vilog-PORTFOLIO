@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROFILES</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+	color: black;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 70px;
+		padding: 0 40px;
+		background: linear-gradient(to left, black, grey);
+	}
+	.nav a{
+		display: flex;
+		list-style: none;
+		align-items: center;
+		color: white;
+		margin-top: 18px;
+		margin: 20px;
+		font-weight: bold;
+		font-family: Georgia,serif;
+		margin-left: 20px;
+		font-size: 20px;
+		padding-top: 10px;
+	}
+      .nav a:hover{
+		color:#cccccc;
+	}
+	.index a{
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+		color: white;
+		font-family: Georgia,serif;
+	}
+	.nav li{
+		margin-bottom: 10px;
+	}
+	ul {
+	display: flex;
+	font-size: 3vh;
+	list-style: none;
+}
+.pfp{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 8px;
+}
+.about-me {
+    font-size: 15px;
+    color: #ddd;
+    margin: 15px 0 25px;
+    line-height: 1.6;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+}
+
+.profile-card {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 300px;
+}
+
+.profile-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.social-links a:hover {
+    background: #666;
+}
+</style>
+<header>
+<div class= "index">
+	<a href= "index.html"> My Portfolio</a></div>
+<ul class= "nav">
+	<li><img src= "profilepic.jpg" alt="Profile Picture" class="pfp"></li>
+	<li><a href="index.html" style="text-decoration: none;">Homepage</a></li>
+	<li><a href="VilogBootstrap.html"style="text-decoration: none;">About Me</a></li>
+	<li><a href="contacts.html"style="text-decoration: none;">Contacts</a></li>
+	<li><a href="profiles.html"style="text-decoration: none;">Profiles</a></li>
+</ul>
+</header>
+<body style= "background-image: url('BG-img.jpg');background-repeat: no-repeat;background-size: cover;">
+	<div class="profile-container">
+  <div class="profile-card">
+    <img src="profilepfp.jpg" alt="Profile Picture" class="profile-pic">
+    <h2>Dan Maico Vilog</h2>
+    <p class="about-me">
+      I'm 20 years old from Sta. Lina, Luna, Apayao.  
+      I'm currently a BSIT student and I enjoy working on websites  
+      and riding motorcycles.
+    </p>
+
+    <div class="social-links">
+      <a href="https://facebook.com/dan.maico.vilog.2024" target="_blank">Facebook</a>
+      <a href="https://github.com/danmaicovilog-sketch/DanMaicoVilog.github.io.git" target="_blank">GitHub</a>
+      <a href="https://www.reddit.com/user/pobge/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" target="_blank">Reddit</a>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
